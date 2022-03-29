@@ -1,0 +1,130 @@
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: #242E52;
+}
+
+.start-button {
+    background-color: #F3603B;
+    color: #FFFFFF;
+}
+
+/* diseño del header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* DISEÑO MAIN/PRESENTATION */
+
+.presentation {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DISEÑO MAIN/CORE */
+
+.core {
+    display: flex;
+}
+
+.core .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.core .right {
+    width: 50%;
+    display: flex;
+}
+
+.key-points {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* DISEÑO MAIN/WITNESSES */
+
+.witnesses {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.witnesses article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FALTA ALINEAR LOS <p> */
+
+/* ESTILO MAIN/LAST-CATCH */
+
+.last-catch {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3613C;
+}
+
+/* ESTILO FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E1E26;
+    ;
+}
+
+.bottom-box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-box-one article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-box-two {
+
+}
+
+.bottom-box-three {
+
+}
+
+.bottom-box-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}

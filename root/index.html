@@ -5,36 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>manage</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stylish.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42846e2256.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
-            <img src="./imagenes/logo.svg" alt="">
-            <section>
-                <ul class="page-links" type="none">
-                    <li>Pricing</li>
-                    <li>Product</li>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>Community</li>
-                </ul>
-            </section>
+            <img src="./imagenes/logo.svg" alt="manage">            
+            <ul class="page-links" type="none">
+                <a href="Pricing"><li>Pricing</li></a>
+                <a href="Product"><li>Product</li></a>
+                <a href="About Us"><li>About Us</li></a>
+                <a href="Careers"><li>Careers</li></a>
+                <a href="Community"><li>Community</li></a>
+            </ul>
             <!-- Falta data etiqueta y tamaño -->
             <input type="button" value="Get Started" class="start-button">
         </nav>
     </header>
     <main>
-
         <section class="presentation">
             
             <article class="left">
                 <h1 id="welcome">Bring everyone together to build better products</h1>
                 <p>
-                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 </p>
                 <input type="button" value="Get Started" class="start-button">
             </article>
@@ -47,42 +45,94 @@
         <section class="core">
 
             <article class="left">
-                <h2>What's different about</h2>
-                <h2>Manage?</h2>
+                <h2>What's different about<div>Manage?</div></h2>
                 <p>
-                    Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams
+                    Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
                 </p>
             </article>
 
             <article class="right">
-
-                <ol>
-                    <li>Track company-wide progress</li>
+                <!-- Se complicaba para el diseño con una Ordered List!! (-_-') -->
+                <ul class="key-points">
+                    <input type="button" value="01" class="start-button">
+                    <h5>Track company-wide progress</h5>
                         <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-                    <li>Advance built-in reports</li>
+                    <input type="button" value="02" class="start-button">
+                    <h5>Advanced built-in reports</h5>
                         <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                    <li>Everything you need in one place</li>
+                    <input type="button" value="03" class="start-button">
+                    <h5>Everything you need in one place</h5>
                         <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
-                </ol>
+                </ul>
             
             </article>
-
-            <h2>What they've said</h2>
-
-            <article class="witnesses">
-                <ul>
-                    <li><img src="./imagenes/avatar-anisha.png">Ali Bravo</li>
-                        <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
-                    <li><img src="./imagenes/avatar-ali.png">Ali Bravo</li>
-                        <p>“We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”</p>
-                    <li><img src="./imagenes/avatar-richard.png">Ali Bravo</li>
-                        <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!”</p>
-                </ul>
-
-            </article>
-
         </section>
 
+        <h2 class="users">What they've said</h2>
+            
+        <!-- Quería hacer lo siguiente en otro article, dentro de main/core con una UL pero no lo lograba acomodar con flexbox -->
+
+        <section class="witnesses">
+            <article class="people">
+                <img src="./imagenes/avatar-anisha.png">
+                <h5>Anisha Li</h5>
+                <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </article>
+            <article class="people">
+                <img src="./imagenes/avatar-ali.png">
+                <h5>Ali Bravo</h5>
+                <p>“We have been able to cancel so many other subscriptions since using manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+            </article>
+            <article class="people">
+                <img src="./imagenes/avatar-richard.png">
+                <h5>Richard Watts</h5>
+                <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!”</p>
+            </article>
+        </section>
+
+        <input type="button" value="Get Started" class="start-button-three">
+
+        <section class="last-catch">
+            <article>
+                <h2>Simplify how your team<div>works today.</div></h2>
+            </article>
+            <input type="button" value="Get Started" class="start-button">
+        </section>
     </main>
+    <footer>
+        <section class="bottom-box-one">
+            <img src="./imagenes/logo.svg" alt="manage">
+            <article>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </article>
+        </section>
+        <section class="bottom-box-two">
+            <!-- Falta clase en ul -->
+            <ul type="none">
+                <a href="home"><li>Home</li></a>
+                <a href="pricing"><li>Pricing</li></a>
+                <a href="products"><li>Products</li></a>
+                <a href="about us"><li>About Us</li></a>
+            </ul>
+        </section>
+        <section class="bottom-box-three">
+            <ul type="none">
+                <li>Careers</li>
+                <li>Community</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </section>
+        <section class="bottom-box-four">
+            <form action="./registros/" method="post">
+                <input type="email" name="email" class="user-email">
+                <input type="submit" value="Go" class="start-button">
+            </form>
+            <p>Copyright 2022. All Rights Reserved</p>
+        </section>
+    </footer>
 </body>
 </html>

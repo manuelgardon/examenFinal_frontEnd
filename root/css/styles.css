@@ -1,8 +1,9 @@
 * {
     border: 0px;
-    margin: 0px;
+    margin: 10px;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
+    text-decoration: none;
 }
 
 header {
@@ -72,8 +73,13 @@ nav {
 
 .li img {
     position: relative;
-    top: -25px;
+    top: -50%;
 }
+
+user-email:invalid {
+    background-color: pink;
+    color: pink;
+  }
 
 @media (max-width: 375px) {
     header section {
