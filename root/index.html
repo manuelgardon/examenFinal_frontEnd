@@ -30,7 +30,7 @@
         <section class="presentation">
             
             <article class="left">
-                <h1 id="welcome">Bring everyone together to build better products</h1>
+                <h1 id="welcome">Bring everyone together to build better products.</h1>
                 <p>
                     Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
                 </p>
@@ -54,13 +54,13 @@
             <article class="right">
                 <!-- Se complicaba para el diseño con una Ordered List!! (-_-') -->
                 <ul class="key-points">
-                    <input type="button" value="01" class="start-button">
+                    <button disabled="disabled" class="start-button">01</button>
                     <h5>Track company-wide progress</h5>
                         <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-                    <input type="button" value="02" class="start-button">
+                    <button disabled="disabled" class="start-button">02</button>
                     <h5>Advanced built-in reports</h5>
                         <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                    <input type="button" value="03" class="start-button">
+                    <button disabled="disabled" class="start-button">03</button>
                     <h5>Everything you need in one place</h5>
                         <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
                 </ul>
@@ -128,9 +128,10 @@
         </section>
         <section class="bottom-box-four">
             <form action="./registros/" method="post">
-                <input type="email" name="email" class="user-email">
+                <input type="email" name="email" class="user-email" required>
                 <input type="submit" value="Go" class="start-button">
             </form>
+            <span class="feedback">Please insert a valid email</span>
             <p>Copyright 2022. All Rights Reserved</p>
         </section>
     </footer>
