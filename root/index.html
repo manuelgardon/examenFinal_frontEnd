@@ -15,12 +15,12 @@
     <header>
         <nav>
             <img src="./imagenes/logo.svg" alt="manage">            
-            <ul class="page-links" type="none">
-                <a href="Pricing"><li>Pricing</li></a>
-                <a href="Product"><li>Product</li></a>
-                <a href="About Us"><li>About Us</li></a>
-                <a href="Careers"><li>Careers</li></a>
-                <a href="Community"><li>Community</li></a>
+            <ul class="page-links">
+                <li><a href="Pricing">Pricing</a></li>
+                <li><a href="Product">Product</a></li>
+                <li><a href="About Us">About Us</a></li>
+                <li><a href="Careers">Careers</a></li>
+                <li><a href="Community">Community</a></li>
             </ul>
             <!-- Falta data etiqueta y tamaño -->
             <input type="button" value="Get Started" class="start-button">
@@ -54,15 +54,21 @@
             <article class="right">
                 <!-- Se complicaba para el diseño con una Ordered List!! (-_-') -->
                 <ul class="key-points">
-                    <button disabled="disabled" class="start-button">01</button>
-                    <h5>Track company-wide progress</h5>
-                        <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-                    <button disabled="disabled" class="start-button">02</button>
-                    <h5>Advanced built-in reports</h5>
-                        <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                    <button disabled="disabled" class="start-button">03</button>
-                    <h5>Everything you need in one place</h5>
-                        <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                    <li class="numbered-list">
+                        <button disabled="disabled" class="start-button">01</button>
+                        <h5>Track company-wide progress</h5>
+                            <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                    </li>
+                    <li class="numbered-list">
+                        <button disabled="disabled" class="start-button">02</button>
+                        <h5>Advanced built-in reports</h5>
+                            <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                    </li>
+                    <li class="numbered-list">
+                        <button disabled="disabled" class="start-button">03</button>
+                        <h5>Everything you need in one place</h5>
+                            <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                    </li>
                 </ul>
             
             </article>
@@ -73,28 +79,30 @@
         <!-- Quería hacer lo siguiente en otro article, dentro de main/core con una UL pero no lo lograba acomodar con flexbox -->
 
         <section class="witnesses">
-            <article class="people">
+            <article class="people one">
                 <img src="./imagenes/avatar-anisha.png">
                 <h5>Anisha Li</h5>
                 <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
             </article>
-            <article class="people">
+            <article class="people two">
                 <img src="./imagenes/avatar-ali.png">
                 <h5>Ali Bravo</h5>
                 <p>“We have been able to cancel so many other subscriptions since using manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
             </article>
-            <article class="people">
+            <article class="people three">
                 <img src="./imagenes/avatar-richard.png">
                 <h5>Richard Watts</h5>
                 <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!”</p>
             </article>
         </section>
 
-        <input type="button" value="Get Started" class="start-button-three">
+        <article class="third-button">
+            <input type="button" value="Get Started" class="start-button">
+        </article>
 
         <section class="last-catch">
             <article>
-                <h2>Simplify how your team<div>works today.</div></h2>
+                <h2>Simplify how your team works today.</h2>
             </article>
             <input type="button" value="Get Started" class="start-button">
         </section>
@@ -112,18 +120,18 @@
         </section>
         <section class="bottom-box-two">
             <!-- Falta clase en ul -->
-            <ul type="none">
-                <a href="home"><li>Home</li></a>
-                <a href="pricing"><li>Pricing</li></a>
-                <a href="products"><li>Products</li></a>
-                <a href="about us"><li>About Us</li></a>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="pricing">Pricing</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="about us">About Us</a></li>
             </ul>
         </section>
         <section class="bottom-box-three">
             <ul type="none">
-                <li>Careers</li>
-                <li>Community</li>
-                <li>Privacy Policy</li>
+                <li><a href="Careers">Careers</a></li>
+                <li><a href="Community">Community</a></li>
+                <li><a href="Policy">Privacy Policy</a></li>
             </ul>
         </section>
         <section class="bottom-box-four">

@@ -2,20 +2,26 @@
 
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
-    text-decoration: none;
     color: #232C50;
-    margin: 1.5% 2%;
+    margin: 0;
+}
+
+main {
+    background-image: url('../imagenes/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position-x: -80%;
+    background-position-y: 70%;
 }
 
 html {
     background-image: url('../imagenes/bg-tablet-pattern.svg');
     background-position-x: 130%;
-    background-position-y: -15%;
+    background-position-y: -10%;
     background-repeat: no-repeat;
 }
 
 a {
-    color: #242E52;
+    text-decoration: none;
 }
 
 .start-button {
@@ -31,24 +37,31 @@ a {
 
 h1 {
     font-size: 3rem;
-    font-weight: 700;
 }
 
 h2 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 h5 {
-    font-size: 0.9rem
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
 p {
     color: #B3B2B7;
-    font-weight: 500;
+    font-weight: 400;
     width: 27vw;
 }
 
 /* diseño del header */
+
+header {
+    padding: 4% 10% 6% 10%;
+}
 
 nav {
     display: flex;
@@ -60,16 +73,20 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
+    margin: 0px;
 }
 
-.page-links a {
-    padding: 7%;
+.page-links li {
+    padding: 10px;
+    width: 80px;
 }
 
 /* DISEÑO MAIN/PRESENTATION */
 
 .presentation {
     display: flex;
+    padding: 0 10% 8% 10%;
 }
 
 .left {
@@ -77,6 +94,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 3% 0 0;
+}
+
+.left p {
+    padding: 6% 0 6% 0;
 }
 
 .right {
@@ -90,6 +112,7 @@ nav {
 
 .core {
     display: flex;
+    padding: 0 10% 5% 10%;
 }
 
 .core .left {
@@ -102,32 +125,74 @@ nav {
 
 .core .right {
     width: 50%;
+    padding: 0%;
     display: flex;
 }
 
-.key-points {
+.numbered-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.numbered-list .start-button {
+    width: 70px;
+    margin-right: 5%;
+    font-weight: 700, bold;
+}
+
+.numbered-list p {
+    margin: 0 0 7% 19%;
 }
 
 /* DISEÑO MAIN/WITNESSES */
 
 .users {
+    text-align: center;
+    padding: 0 0 8% 0;
 }
 
 .witnesses {
-    width: 100%;
     display: flex;
     justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
 }
 
-.witnesses article {
+.people {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    padding: 0 2% 3% 2%;
 }
 
-/* FALTA ALINEAR LOS <p> */
+.people img {
+    max-width: 90px;
+    position: relative;
+    top: -50px;
+}
+
+.people h5 {
+    position: relative;
+    top: -20px;
+}
+
+.people p {
+    display: flex;
+    text-align: center;
+    height: 80px;
+}
+
+.third-button {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10% 0 10%;
+}
 
 /* ESTILO MAIN/LAST-CATCH */
 
@@ -135,6 +200,20 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #F3613C;
+    padding: 5% 10% 5% 10%;
+    align-items: center;
+}
+
+.last-catch article h2 {
+    width: 430px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.last-catch input {
+    background-color: #FFFFFF;
+    color: #f3603B;
+    font-weight: bold;
 }
 
 /* ESTILO FOOTER */
@@ -142,7 +221,18 @@ nav {
 footer {
     display: flex;
     justify-content: space-between;
-    ;
+    padding: 5% 10% 5% 10%;
+    background-color: #1E1E26;
+    color: #FFFFFF;
+    height: 130px;
+}
+
+footer i {
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #B3B2B7;
 }
 
 .bottom-box-one {
@@ -151,17 +241,20 @@ footer {
     justify-content: space-between;
 }
 
+.bottom-box-one img {
+}
+
 .bottom-box-one article {
     display: flex;
     justify-content: space-between;
 }
 
-.bottom-box-two {
-
+.bottom-box-two li{
+    padding: 8px;
 }
 
-.bottom-box-three {
-
+.bottom-box-three li {
+    padding: 8px;
 }
 
 .bottom-box-four {
@@ -173,5 +266,4 @@ footer {
 
 .user-email:invalid {
     border-color: #F3603B;
-
 }
