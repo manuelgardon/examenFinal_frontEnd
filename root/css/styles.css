@@ -349,10 +349,7 @@ footer a:hover {
     background-position-x: 40%;
     background-position-y: -10%;
   }
-
-  main {
-  }
-
+  
   nav .page-links, nav .start-button {
     display: none;
   }
